@@ -1,0 +1,43 @@
+body,button,input {
+	font-family: 'Audiowide', cursive;
+	margin: 10px;
+}
+
+input {
+	text-align:center;
+	width: 5em;
+}
+
+#image_holder {
+}
+
+table {
+	width: 100%;
+	max-width: 600px;
+	border-collapse: collapse;
+}
+
+td {
+	border: solid 1px #AAA;
+	text-align: center;
+}
+
+.black {
+	background-color: #000;
+}
+.v {
+	font-family:"Courier New", Courier, monospace;
+	font-size: small;
+}
+
+#python_frame {
+	display:none;
+}
+#values {
+	float: right;
+	margin: 2em;
+	padding: 1em;
+	border: 1px solid black;
+	background-color: #ffa;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}

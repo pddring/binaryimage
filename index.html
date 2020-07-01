@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><title>Make your own binary image</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="lib.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Make your own binary image</h1>
+<p>Tap on each pixels to toggle black or white</p>
+<label for="size">Size:</label><input name="size" id="size" value="8"> pixels square <button id="btn_make">Make image</button>
+<div id="values">
+	<h2>Image data:</h2>
+	<div class="value">Hex: <span class="v" id="hex_value"></span></div>
+	<div class="value">Denary: <span class="v" id="dec_value"></span></div>
+	<div class="value">Binary: <span class="v" id="bin_value"></span></div>
+	<div class="value">RLE: <span class="v" id="rle_value"></span></div>
+</div>
+
+<div id="image_holder"></div>
+
+<!-- Form to display python code-->
+<div class="value">Python: <button id="btn_python">Make image in Python</button>
+	<form id="python_form" method="post" action="https://create.withcode.uk" target="python_frame">
+		<input type="hidden" name="mode" value="embed">
+		<input type="hidden" id="python_code" name="py_files" value="hello">
+	</form>
+	<iframe id="python_frame" name="python_frame" width="100%" height="400" frameborder="0"></iframe></div>
+<!-- -->
+</body>
+</html>
